@@ -1,0 +1,144 @@
+@font-face {
+    font-family: reverse;
+    src: url(reverse.otf);
+}
+html, body {
+    overflow-x: hidden;
+    background-color: #000000;
+}
+#logo {
+    font-family: reverse;
+    letter-spacing: 0.3em;
+    color: black;
+    margin-left: 0.4em;
+    font-size:1.5em;
+}
+#logoLink {
+    text-decoration: none;
+}
+#logo, button {
+    display:inline;
+}
+ul {
+    margin-top: -1em;
+    font-size: 1.5em;
+}
+h1, h2 {
+	font-family: reverse;
+}
+.indexHeadline {
+  margin-top: 0.1em;
+  font-size: 3em;
+}
+#middleCol {
+    background-color: white;
+}
+#headRow {
+    width:100%;
+    background-color: red;
+}
+.coverImage {
+    width: 100%;
+    height: auto;
+}
+.btn-group a {
+    text-decoration: none;
+    color: black;
+}
+
+/* For fade out in index */
+     .indexText {
+      font-size: 1.2em;
+      position: relative;
+      height: 5.5em;
+      overflow: hidden;
+      margin-bottom: 0.5em;
+    }
+    .indexText:after {
+      content: "";
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 33%;
+      height: 1.2em;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 33%);
+    } 
+
+.indexItem {
+  border-bottom-style: solid;
+}
+.readMore {
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+#aboutCon {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+}
+#caption
+  {
+    margin-left: 3em;
+  }
+#articleBody {
+  margin-top: 3em;
+}
+.input-group-addon {
+  min-width: 7.5em;
+  font-size:1.1em;
+}
+#contributeSubmit, #commentSubmit {
+  background-color: #DDD;
+  width: 33%;
+  margin-left: 33%;
+}
+
+.btn-input {
+   display: block;
+}
+
+.btn-input .btn.form-control {
+    text-align: left;
+}
+
+.btn-input .btn.form-control span:first-child {
+   left: 10px;
+   overflow: hidden;
+   position: absolute;
+   right: 25px;
+}
+
+.btn-input .btn.form-control .caret {
+   margin-top: -1px;
+   position: absolute;
+   right: 10px;
+   top: 50%;
+}
+
+#inputAuthor, #inputCategory {
+  width:20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contribute, #latest {
+  font-weight: bold;
+}
+.articleAuthor {
+  margin-left: 2em;
+}
+
+#returnButton {
+  display:block;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#copyright {
+  margin-top: 2em;
+  display: block;
+}
