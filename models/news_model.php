@@ -34,7 +34,7 @@ class News_model extends CI_Model {
 
 	$slug = url_title($this->input->post('title'), 'dash', TRUE);
 
-	$filename = $_FILES["file"]["name"];
+	$filename = $_FILES["userfile"]["name"];
 
 	$date = date("F j, Y, g:i a"); 
 

@@ -2,6 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <head>
 	<title><?php echo $title ?> - Tribune</title>
+	<link rel="icon" href="/tribune/resources/bigt.ico" type="image/x-icon" />
 	<link type="text/css" rel="stylesheet" href="/tribune/resources/bootstrap.css">
 	<link type="text/css" rel="stylesheet" href="/tribune/resources/style.css">
 </head>
@@ -13,19 +14,20 @@
 		<a id="logoLink" href="/tribune/news"><h1 id="logo">TRIBUNE</h1></a>
 		<!-- </div> -->
 
+		<!-- must use styled <a> instead of <button> for IE browsers -->
 		<div class="btn-group">
-		  <button id="latest" type="button" class="btn btn-default"><a href="/tribune/news">Latest News</a></button>
-		  <button id="s4s" type="button" class="btn btn-default"><a href="/tribune/news/s4s">S4S</a></button>
-		  <button id="4chan" type="button" class="btn btn-default"><a href="/tribune/news/4chan">4Chan</a></button>
-		  <button id="www" type="button" class="btn btn-default"><a href="/tribune/news/www">World Wide Web</a></button>
-		  <button id="opinion" type="button" class="btn btn-default"><a href="/tribune/news/opinion">Opinion</a></button>
-		  <button id="advice" type="button" class="btn btn-default"><a href="/tribune/news/advice">Advice</a></button>
-		  <button id="reviews" type="button" class="btn btn-default"><a href="/tribune/news/reviews">Reviews</a></button>
-		  <button id="interviews" type="button" class="btn btn-default"><a href="/tribune/news/interviews">Interviews</a></button>
-		  <button id="investigations" type="button" class="btn btn-default"><a href="/tribune/news/investigations">Investigations</a></button>
-		  <button id="contribute" type="button" class="btn btn-success"><a href="/tribune/news/contribute">Contribute</a></button>
-		  <button id="magazine" type="button" class="btn btn-danger"><a href="/tribunemagazine">Magazine</a></button>
-		  <button id="contact" type="button" class="btn btn-info"><a href="/tribune/about">Contact</a></button>
+		  <a id="latest" type="button" class="btn btn-default" href="/tribune/news">Latest News</a>
+		  <a id="s4s" type="button" class="btn btn-default" href="/tribune/news/s4s">S4S</a>
+		  <a id="4chan" type="button" class="btn btn-default" href="/tribune/news/4chan">4Chan</a>
+		  <a id="www" type="button" class="btn btn-default" href="/tribune/news/www">World Wide Web</a>
+		  <a id="opinion" type="button" class="btn btn-default" href="/tribune/news/opinion">Opinion</a>
+		  <a id="advice" type="button" class="btn btn-default" href="/tribune/news/advice">Advice</a>
+		  <a id="reviews" type="button" class="btn btn-default" href="/tribune/news/reviews">Reviews</a>
+		  <a id="interviews" type="button" class="btn btn-default" href="/tribune/news/interviews">Interviews</a>
+		  <a id="investigations" type="button" class="btn btn-default" href="/tribune/news/investigations">Investigations</a>
+		  <a id="contribute" type="button" class="btn btn-success" href="/tribune/news/contribute">Contribute</a>
+		  <a id="magazine" type="button" class="btn btn-danger" href="/tribunemagazine">Magazine</a>
+		  <a id="contact" type="button" class="btn btn-info" href="/tribune/about">Contact</a>
 		</div>
 	</div>
 </div>
