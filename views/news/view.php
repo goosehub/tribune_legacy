@@ -6,11 +6,22 @@ echo '<img class="coverImage img-thumbnail" src="/tribune/images/'.$news_item['f
 echo '<em id="caption">'.$news_item['caption'].'</em>';
 echo '<p id="articleBody">'.nl2br($news_item['text']).'</p>';
 ?>
-	<a href="../news"><button type="button" class="btn btn-default">Return to News Feed</button></a>
+<a href="../news"><button type="button" class="btn btn-default">Return to News Feed</button></a>
+
+// ADVERTISMENT
+<?php
+$adverts = array(
+	'<img class="advertImage" src="/tribune/ads/steal.png">',
+	'<img class="advertImage" src="/tribune/ads/this.png">',
+	'<img class="advertImage" src="/tribune/ads/duckey.jpg">'
+	);
+$rand_keys = array_rand($adverts, 2);
+echo $adverts[$rand_keys[0]] . "\n";
+?>
+
 <h3>Join the Discussion</h3>
 
 <?php echo validation_errors(); 
-
 	$link = $this->uri->uri_string();
 	echo form_open($link);
 ?>
@@ -29,7 +40,7 @@ echo '<p id="articleBody">'.nl2br($news_item['text']).'</p>';
 	</div>
 	</div>
 
-	<input id="commentSubmit" class="form-control input-lg" type="submit" name="submit" value="contribute comment" />
+	<input id="commentSubmit" class="form-control input-lg" type="submit" name="submit" value="Comment" />
 
 </form>
 <div class="row">

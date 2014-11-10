@@ -24,14 +24,14 @@ if (validation_errors()
 	      <div class="input-group-addon">Author</div>
 			<select class="form-control" name="author">
 			  <option value="Anonymous">Anonymous</option>
-			  <option value="Peter Parker">Unknown</option>
-			  <option value="Tom Brokah">Undisclosed</option>
-			  <option value="Jesus">Unidentified</option>
-			  <option value="Jesus">Unacknowledged</option>
-			  <option value="Jesus">Uncredited</option>
-			  <option value="Jesus">Bob</option>
-			  <option value="Jesus">Jack</option>
-			  <option value="Jesus">Jay</option>
+			  <option value="Unknown">Unknown</option>
+			  <option value="Undisclosed">Undisclosed</option>
+			  <option value="Unidentified">Unidentified</option>
+			  <option value="Unacknowledged">Unacknowledged</option>
+			  <option value="Uncredited">Uncredited</option>
+			  <option value="Bob">Bob</option>
+<!-- 			  <option value="Jack">Jack</option>
+			  <option value="Amy">Amy</option> -->
 			</select>
 		</div>
 	</div>
