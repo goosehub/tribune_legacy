@@ -2,7 +2,7 @@
     font-family: reverse;
     src: url(reverse.otf);
 }
-html, body {
+body {
     overflow-x: hidden;
     background-color: #000000;
 }
@@ -29,6 +29,9 @@ h1, h2 {
 .indexHeadline {
   margin-top: 0.1em;
   font-size: 3em;
+}
+#viewTitle {
+  font-size: 5em;
 }
 #middleCol {
     background-color: white;
@@ -139,6 +142,6 @@ h1, h2 {
 }
 
 #copyright {
-  margin-top: 2em;
-  display: block;
+  padding: 2em;
+  display: inline;
 }

@@ -2,10 +2,19 @@
 
 <!-- Error Display -->
 <?php 
+//if statement prevents unidentified error variables
+if (validation_errors()
+	|| $errorCode
+	|| $errorInvalid
+	|| $errorExists)
+	{
+	echo '<div class="alert alert-danger" role="alert">';
 	echo validation_errors();
 	echo $errorCode;
 	echo $errorInvalid;
 	echo $errorExists;
+	echo '</div>';
+	}
 ?>
 
 <?php echo form_open_multipart('news/contribute') ?>
@@ -15,9 +24,14 @@
 	      <div class="input-group-addon">Author</div>
 			<select class="form-control" name="author">
 			  <option value="Anonymous">Anonymous</option>
-			  <option value="Peter Parker">Peter Parker</option>
-			  <option value="Tom Brokah">Tom Brokah</option>
-			  <option value="Jesus">Jesus</option>
+			  <option value="Peter Parker">Unknown</option>
+			  <option value="Tom Brokah">Undisclosed</option>
+			  <option value="Jesus">Unidentified</option>
+			  <option value="Jesus">Unacknowledged</option>
+			  <option value="Jesus">Uncredited</option>
+			  <option value="Jesus">Bob</option>
+			  <option value="Jesus">Jack</option>
+			  <option value="Jesus">Jay</option>
 			</select>
 		</div>
 	</div>

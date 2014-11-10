@@ -1,5 +1,3 @@
-
-
 <?php
 echo '<h1 class="viewTitle">'.$news_item['title'].'</h1>';
 echo '<h5 class="articleAuthor">By <strong>'.$news_item['author'].'</strong></h5>';
@@ -34,10 +32,15 @@ echo '<p id="articleBody">'.nl2br($news_item['text']).'</p>';
 	<input id="commentSubmit" class="form-control input-lg" type="submit" name="submit" value="contribute comment" />
 
 </form>
-
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
 <?php
 foreach ($comments as $row) {
-echo '<h4>'.$row['name'].'</h4>';
-echo $row['text'];
+echo '<h3>'.$row['name'].'</h3>';
+echo nl2br($row['text']);
 }
 ?>
+</div>
+<div class="col-md-2"></div>
+</div>
