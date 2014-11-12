@@ -150,6 +150,7 @@ class News extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+// Contribute page function
 	public function contribute()
 	{
 		$data['title'] = 'Contribute';
@@ -167,9 +168,9 @@ class News extends CI_Controller {
 // Form Validation
 		$this->load->helper('form');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('title', 'Title', 'required|min_length[5]|max_length[48]');
-		$this->form_validation->set_rules('text', 'text', 'required|min_length[5]|max_length[64000]');
-		$this->form_validation->set_rules('caption', 'caption', 'required|min_length[5]|max_length[256]');
+		$this->form_validation->set_rules('title', 'Title', 'required|min_length[1]|max_length[48]');
+		$this->form_validation->set_rules('text', 'text', 'required|min_length[512]|max_length[64000]');
+		$this->form_validation->set_rules('caption', 'caption', 'required|min_length[1]|max_length[256]');
 
 //Image upload
 	if(
@@ -195,14 +196,14 @@ class News extends CI_Controller {
 		|| ($_FILES["userfile"]["type"] == "image/pjpeg")
 		|| ($_FILES["userfile"]["type"] == "image/x-png")
 		|| ($_FILES["userfile"]["type"] == "image/png"))
-		&& ($_FILES["userfile"]["size"] < 3200000)
+		&& ($_FILES["userfile"]["size"] < 1600000)
 		&& ($image_height < 3200)
 		&& ($image_width < 3200)
 		&& ($image_height > 200)
 		&& ($image_width > 200)
-		&& in_array($extension, $allowedExts)) {
-		  if ($_FILES["userfile"]["error"] > 0) {
+		&& in_array($extension, $allowedExts)) {	
 // Error check
+		  if ($_FILES["userfile"]["error"] > 0) {
 		    $data['errorCode'] = "Return Code: " . $_FILES["userfile"]["error"] . "<br>";
 		  } else {
 //File info stored
@@ -226,7 +227,7 @@ class News extends CI_Controller {
 		else
 		{
 // General error Reporting
-			$data['errorInvalid'] = 'Invalid File';
+			$data['errorInvalid'] = 'Invalid File Size. 200 by 200 pixels is the minimum. 3200 by 3200 is the maximum.';
 			$this->load->view('templates/header', $data);
 			$this->load->view('news/contribute');
 			$this->load->view('templates/footer');

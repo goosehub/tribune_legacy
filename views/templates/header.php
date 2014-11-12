@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 	<title><?php echo $title ?> - Tribune</title>
 	<link rel="icon" href="/tribune/resources/bigt.ico" type="image/x-icon" />
@@ -15,7 +17,7 @@
 		<!-- </div> -->
 
 		<!-- must use styled <a> instead of <button> for IE browsers -->
-		<div class="btn-group">
+		<div id="navBar" class="btn-group">
 		  <a id="latest" type="button" class="btn btn-default" href="/tribune/news">Latest News</a>
 		  <a id="s4s" type="button" class="btn btn-default" href="/tribune/news/s4s">S4S</a>
 		  <a id="4chan" type="button" class="btn btn-default" href="/tribune/news/4chan">4Chan</a>

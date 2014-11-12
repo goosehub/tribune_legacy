@@ -29,9 +29,9 @@ if (validation_errors()
 			  <option value="Unidentified">Unidentified</option>
 			  <option value="Unacknowledged">Unacknowledged</option>
 			  <option value="Uncredited">Uncredited</option>
-			  <option value="Bob">Bob</option>
-<!-- 			  <option value="Jack">Jack</option>
-			  <option value="Amy">Amy</option> -->
+			  <!-- <option value="Bob">Bob</option> -->
+			  <!-- <option value="Jack">Jack</option> -->
+			  <!-- <option value="Amy">Amy</option> -->
 			</select>
 		</div>
 	</div>

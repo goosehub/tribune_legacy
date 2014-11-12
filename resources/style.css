@@ -6,6 +6,13 @@ body {
     overflow-x: hidden;
     background-color: #000000;
 }
+
+
+/*  navbar */
+#headRow {
+    width:100%;
+    background-color: red;
+}
 #logo {
     font-family: reverse;
     letter-spacing: 0.3em;
@@ -16,9 +23,15 @@ body {
 #logoLink {
     text-decoration: none;
 }
+#navBar {
+    display: inline-block;
+}
 #logo, button {
     display:inline;
 }
+
+
+
 ul {
     margin-top: -1em;
     font-size: 1.5em;
@@ -35,10 +48,6 @@ h1, h2 {
 }
 #middleCol {
     background-color: white;
-}
-#headRow {
-    width:100%;
-    background-color: red;
 }
 .coverImage {
     width: 100%;
@@ -86,6 +95,7 @@ h1, h2 {
   }
 #articleBody {
   margin-top: 3em;
+  font-size: 1.2em;
 }
 .input-group-addon {
   min-width: 7.5em;
