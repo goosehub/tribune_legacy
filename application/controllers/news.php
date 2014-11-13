@@ -149,6 +149,16 @@ class News extends CI_Controller {
 		$this->load->view('news/investigations', $data);
 		$this->load->view('templates/footer');
 	}
+		public function showcase()
+	{
+		$category = 'Showcase';
+		$data['news'] = $this->news_model->get_news_category($category);
+		$data['title'] = 'Showcase';
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('news/showcase', $data);
+		$this->load->view('templates/footer');
+	}
 
 // Contribute page function
 	public function contribute()
@@ -169,7 +179,7 @@ class News extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('title', 'Title', 'required|min_length[1]|max_length[48]');
-		$this->form_validation->set_rules('text', 'text', 'required|min_length[512]|max_length[64000]');
+		$this->form_validation->set_rules('text', 'text', 'required|min_length[1]|max_length[64000]');
 		$this->form_validation->set_rules('caption', 'caption', 'required|min_length[1]|max_length[256]');
 
 //Image upload

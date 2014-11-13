@@ -12,32 +12,30 @@ body {
 #headRow {
     width:100%;
     background-color: red;
+    text-align: center;
 }
 #logo {
     font-family: reverse;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.8em;
     color: black;
     margin-left: 0.4em;
-    font-size:1.5em;
+    font-size:1.8em;
+    display:inline;
 }
 #logoLink {
     text-decoration: none;
 }
-#navBar {
-    display: inline-block;
+#navBar a {
+  margin-left: auto;
+  margin-right: auto;
 }
-#logo, button {
-    display:inline;
-}
-
-
 
 ul {
     margin-top: -1em;
     font-size: 1.5em;
 }
 h1, h2 {
-	font-family: reverse;
+  font-family: reverse;
 }
 .indexHeadline {
   margin-top: 0.1em;
@@ -58,7 +56,7 @@ h1, h2 {
     color: black;
 }
 
-/* For fade out in index */
+/* For fade out in article previews */
      .indexText {
       font-size: 1.2em;
       position: relative;

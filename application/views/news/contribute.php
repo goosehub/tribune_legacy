@@ -48,6 +48,7 @@ if (validation_errors()
 			  <option value="Reviews">Reviews</option>
 			  <option value="Interviews">Interviews</option>
 			  <option value="Investigations">Investigations</option>
+			  <option value="Showcase">Showcase</option>
 			</select>
 		</div>
 	</div>
@@ -77,6 +78,6 @@ if (validation_errors()
 	</div>
 	</div>
 
-	<input class="form-control input-lg" id="contributeSubmit" type="submit" name="submit" value="Submit news article" />
+	<input class="form-control input-lg" id="contributeSubmit" type="submit" name="submit" value="Contribute" />
 
 </form>

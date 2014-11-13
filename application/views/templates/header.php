@@ -17,7 +17,7 @@
 		<!-- </div> -->
 
 		<!-- must use styled <a> instead of <button> for IE browsers -->
-		<div id="navBar" class="btn-group">
+		<div id="navBar">
 		  <a id="latest" type="button" class="btn btn-default" href="/tribune/news">Latest News</a>
 		  <a id="s4s" type="button" class="btn btn-default" href="/tribune/news/s4s">S4S</a>
 		  <a id="4chan" type="button" class="btn btn-default" href="/tribune/news/4chan">4Chan</a>
@@ -27,6 +27,7 @@
 		  <a id="reviews" type="button" class="btn btn-default" href="/tribune/news/reviews">Reviews</a>
 		  <a id="interviews" type="button" class="btn btn-default" href="/tribune/news/interviews">Interviews</a>
 		  <a id="investigations" type="button" class="btn btn-default" href="/tribune/news/investigations">Investigations</a>
+		  <a id="investigations" type="button" class="btn btn-default" href="/tribune/news/showcase">Showcase</a>
 		  <a id="contribute" type="button" class="btn btn-success" href="/tribune/news/contribute">Contribute</a>
 		  <a id="magazine" type="button" class="btn btn-danger" href="/tribunemagazine">Magazine</a>
 		  <a id="contact" type="button" class="btn btn-info" href="/tribune/about">Contact</a>

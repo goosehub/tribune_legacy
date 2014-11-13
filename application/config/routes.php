@@ -52,6 +52,8 @@ $route['news/advice'] = 'news/advice';
 $route['news/reviews'] = 'news/reviews';
 $route['news/interviews'] = 'news/interviews';
 $route['news/investigations'] = 'news/investigations';
+$route['news/showcase'] = 'news/showcase';
+
 
 
 $route['default_controller'] = 'pages/view';
