@@ -11,7 +11,7 @@ This project uses CodeIgniter as a PHP framework, but does not depend upon it. I
 
 This project uses Active Record for secure and easy Database Interactions. It is easy to understand, even without explanation.
 
-The images in the 'ads' and 'images' folder are simply placeholders.
+The images folder is empty, but needed to receive uploads.
 
 The index file in the root is simply a redirect.
 
