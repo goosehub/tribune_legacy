@@ -11,18 +11,19 @@ class News_model extends CI_Model {
 	if ($slug === FALSE)
 	{
 		$this->db->order_by("id", "desc"); 
-		$query = $this->db->get('news');
+		$query = $this->db->get('news', 32);
 		return $query->result_array();
 	}
 
 	$query = $this->db->get_where('news', array('slug' => $slug));
+	$this->db->limit(1);
 	return $query->row_array();
 	}
 
 	public function get_news_comments($slug)
 	{
 	$this->db->order_by("id", "asc"); 
-	$query = $this->db->get_where('news_comments', array('news' => $slug));
+	$query = $this->db->get_where('news_comments', array('news' => $slug), 1024);
 	return $query->result_array();
 	}
 
@@ -68,7 +69,7 @@ class News_model extends CI_Model {
 	public function get_news_category($category)
 	{
 		$this->db->order_by("id", "desc"); 
-		$query = $this->db->get_where('news', array('category' => $category), 64);
+		$query = $this->db->get_where('news', array('category' => $category), 32);
 		return $query->result_array();
 	}
 

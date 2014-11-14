@@ -8,7 +8,11 @@ echo '<p id="articleBody">'.nl2br($news_item['text']).'</p>';
 ?>
 <a href="../news"><button type="button" class="btn btn-default">Return to News Feed</button></a>
 
-<h3>Join the Discussion</h3>
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+
+<h2>Join the Discussion</h2>
 
 <?php echo validation_errors(); 
 	$link = $this->uri->uri_string();
@@ -32,9 +36,6 @@ echo '<p id="articleBody">'.nl2br($news_item['text']).'</p>';
 	<input id="commentSubmit" class="form-control input-lg" type="submit" name="submit" value="Comment" />
 
 </form>
-<div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8">
 <?php
 foreach ($comments as $row) {
 echo '<h3>'.$row['name'].'</h3>';
@@ -48,9 +49,9 @@ echo nl2br($row['text']);
 						<!-- START ADVERTISMENT -->
 <?php
 $adverts = array(
-	'<img class="advertImage" src="/tribune/ads/steal.png">',
-	'<img class="advertImage" src="/tribune/ads/this.png">',
-	'<img class="advertImage" src="/tribune/ads/duckey.jpg">'
+	'<img class="advertImage" src="/tribune/ads/ad01.jpg">',
+	'<img class="advertImage" src="/tribune/ads/ad02.jpg">',
+	'<img class="advertImage" src="/tribune/ads/ad03.jpg">'
 	);
 $rand_keys = array_rand($adverts, 1);
 echo $adverts[$rand_keys] . "\n";

@@ -30,7 +30,7 @@ class News extends CI_Controller {
 		$data['comments'] = $this->news_model->get_news_comments($slug);
 //Requirements for comments
 		$this->form_validation->set_rules('name', 'Name', 'required|min_length[1]|max_length[32]');
-		$this->form_validation->set_rules('text', 'text', 'required|min_length[1]|max_length[512]');
+		$this->form_validation->set_rules('text', 'text', 'required|min_length[1]|max_length[2048]');
 
 		if (empty($data['news_item']))
 		{

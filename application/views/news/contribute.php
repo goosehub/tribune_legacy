@@ -1,5 +1,4 @@
-<h4>See news happening in your browser?</h4>
-
+<h2 id="contributeHeadline"> Contribute </h2>
 <!-- Error Display -->
 <?php 
 //if statement prevents unidentified error variables

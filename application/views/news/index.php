@@ -17,7 +17,7 @@
     <a href="/tribune/news/<?php echo $news_item['slug'] ?>">
 	<button type="button" class="readMore btn btn-default">Read More</button>
 	</a>
-	<button class="articleCategory btn btn-disabled"><?php echo $news_item['category'] ?></button>
+	<button class="articleCategory btn btn-disabled" disabled="disabled"><?php echo $news_item['category'] ?></button>
 
 	  </div>
 	  </div>
@@ -27,9 +27,9 @@
 						<!-- START ADVERTISMENT -->
 <?php
 $adverts = array(
-	'<img class="advertImage" src="/tribune/ads/steal.png">',
-	'<img class="advertImage" src="/tribune/ads/this.png">',
-	'<img class="advertImage" src="/tribune/ads/duckey.jpg">'
+	'<img class="advertImage" src="/tribune/ads/ad01.jpg">',
+	'<img class="advertImage" src="/tribune/ads/ad02.jpg">',
+	'<img class="advertImage" src="/tribune/ads/ad03.jpg">'
 	);
 $rand_keys = array_rand($adverts, 1);
 echo $adverts[$rand_keys] . "\n";
