@@ -37,6 +37,7 @@ class News_model extends CI_Model {
 
 	$filename = $_FILES["userfile"]["name"];
 
+	date_default_timezone_set('America/New_York');
 	$date = date("F j, Y, g:i a"); 
 
 	$data = array(

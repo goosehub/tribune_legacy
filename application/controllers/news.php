@@ -17,6 +17,7 @@ class News extends CI_Controller {
 //Index View
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/index');
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 
@@ -47,6 +48,7 @@ class News extends CI_Controller {
 //Load article view
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/view');
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 		}
 		else
@@ -60,6 +62,7 @@ class News extends CI_Controller {
 //Load index
 			$this->load->view('templates/header', $data);
 			$this->load->view('news/index');
+			$this->load->view('templates/ad');
 			$this->load->view('templates/footer');	
 		}
 	}
@@ -68,7 +71,7 @@ class News extends CI_Controller {
 		public function s4s()
 	{
 // Category
-		$category = 's4s';
+		$category = 'S4S';
 // Get the index data
 		$data['news'] = $this->news_model->get_news_category($category);
 // Page Title
@@ -76,6 +79,7 @@ class News extends CI_Controller {
 //Load index
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/s4s', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 // functions can't start with a number, so fourchan instead of 4chan
@@ -87,66 +91,73 @@ class News extends CI_Controller {
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/4chan', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 		public function www()
 	{
-		$category = 'world wide web';
+		$category = 'World Wide Web';
 		$data['news'] = $this->news_model->get_news_category($category);
 		$data['title'] = 'World Wide Web News';
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/www', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 		public function opinion()
 	{
-		$category = 'opinion';
+		$category = 'Opinion';
 		$data['news'] = $this->news_model->get_news_category($category);
 		$data['title'] = 'Opinion';
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/opinion', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 		public function advice()
 	{
-		$category = 'advice';
+		$category = 'Advice';
 		$data['news'] = $this->news_model->get_news_category($category);
 		$data['title'] = 'Advice';
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/advice', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 		public function reviews()
 	{
-		$category = 'reviews';
+		$category = 'Reviews';
 		$data['news'] = $this->news_model->get_news_category($category);
 		$data['title'] = 'Reviews';
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/reviews', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 		public function interviews()
 	{
-		$category = 'interviews';
+		$category = 'Interviews';
 		$data['news'] = $this->news_model->get_news_category($category);
 		$data['title'] = 'Interviews';
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/interviews', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 		public function investigations()
 	{
-		$category = 'investigations';
+		$category = 'Investigations';
 		$data['news'] = $this->news_model->get_news_category($category);
 		$data['title'] = 'Investigations';
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/investigations', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 		public function showcase()
@@ -157,6 +168,7 @@ class News extends CI_Controller {
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/showcase', $data);
+		$this->load->view('templates/ad');
 		$this->load->view('templates/footer');
 	}
 
@@ -178,9 +190,11 @@ class News extends CI_Controller {
 // Form Validation
 		$this->load->helper('form');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('title', 'Title', 'required|min_length[1]|max_length[48]');
-		$this->form_validation->set_rules('text', 'text', 'required|min_length[1]|max_length[64000]');
+		$this->form_validation->set_rules('title', 'title', 'required|min_length[1]|max_length[48]');
+		$this->form_validation->set_rules('text', 'body', 'required|min_length[1]|max_length[64000]');
 		$this->form_validation->set_rules('caption', 'caption', 'required|min_length[1]|max_length[256]');
+		// $this->form_validation->set_rules('userfile', 'cover image', 'required');
+
 
 //Image upload
 	if(
@@ -231,6 +245,7 @@ class News extends CI_Controller {
 //Load success view
 		      $this->load->view('templates/header', $data);
 		      $this->load->view('news/success');
+			  $this->load->view('templates/ad');
 		      $this->load->view('templates/footer');	
 		  }
 		}
