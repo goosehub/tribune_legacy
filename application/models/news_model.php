@@ -35,8 +35,6 @@ class News_model extends CI_Model {
 
 	$slug = url_title($this->input->post('title'), 'dash', TRUE);
 
-	$filename = $_FILES["userfile"]["name"];
-
 	date_default_timezone_set('America/New_York');
 	$date = date("F j, Y, g:i a"); 
 

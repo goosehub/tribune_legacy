@@ -235,12 +235,13 @@ class News extends CI_Controller {
 		    $data['uploadType'] = "Type: " . $_FILES["userfile"]["type"] . "<br>";
 		    $data['uploadSize'] = "Size: " . ($_FILES["userfile"]["size"] / 1024) . " kB<br>";
 		    $data['uploadFilename'] = "Temp file: " . $_FILES["userfile"]["tmp_name"] . "<br>";
+// Rename file to UNIX time
+	        $filename = time().'.'.$extension;
 // Move File
 		      move_uploaded_file($_FILES["userfile"]["tmp_name"],
-		      "../tribune/images/" . $_FILES["userfile"]["name"]);
-		      $data['uploadLocation'] = "Stored in: " . "/tribune/images/" . $_FILES["userfile"]["name"];
+		      "../tribune/images/" . $filename);
+		      $data['uploadLocation'] = "Stored in: " . "/tribune/images/" . $filename;
 // Insert into model
-		      $filename = $_FILES["userfile"]["name"];
 		      $this->news_model->set_news($filename);
 //Load success view
 		      $this->load->view('templates/header', $data);
