@@ -18,19 +18,19 @@
 
 		<!-- must use styled <a> instead of <button> for IE browsers -->
 		<div id="navBar">
-		  <a id="latest" type="button" class="btn btn-default" href="/tribune/news">Latest News</a>
-		  <a id="s4s" type="button" class="btn btn-default" href="/tribune/news/s4s">S4S</a>
-		  <a id="4chan" type="button" class="btn btn-default" href="/tribune/news/4chan">4Chan</a>
-		  <a id="www" type="button" class="btn btn-default" href="/tribune/news/www">World Wide Web</a>
-		  <a id="opinion" type="button" class="btn btn-default" href="/tribune/news/opinion">Opinion</a>
-		  <a id="advice" type="button" class="btn btn-default" href="/tribune/news/advice">Advice</a>
-		  <a id="reviews" type="button" class="btn btn-default" href="/tribune/news/reviews">Reviews</a>
-		  <a id="interviews" type="button" class="btn btn-default" href="/tribune/news/interviews">Interviews</a>
-		  <a id="investigations" type="button" class="btn btn-default" href="/tribune/news/investigations">Investigations</a>
-		  <a id="investigations" type="button" class="btn btn-default" href="/tribune/news/showcase">Showcase</a>
-		  <a id="contribute" type="button" class="btn btn-success" href="/tribune/news/contribute">Contribute</a>
-		  <a id="magazine" type="button" class="btn btn-danger" href="/tribunemagazine">Magazine</a>
-		  <a id="contact" type="button" class="btn btn-info" href="/tribune/about">Contact</a>
+		  <a id="latest" type="button" class="nav-item" href="/tribune/news">Latest News</a><p class="divider"> |</p>
+		  <a id="s4s" type="button" class="nav-item" href="/tribune/news/s4s">S4S</a><p class="divider"> |</p>
+		  <a id="4chan" type="button" class="nav-item" href="/tribune/news/4chan">4Chan</a><p class="divider"> |</p>
+		  <a id="www" type="button" class="nav-item" href="/tribune/news/www">World Wide Web</a><p class="divider"> |</p>
+		  <a id="opinion" type="button" class="nav-item" href="/tribune/news/opinion">Opinion</a><p class="divider"> |</p>
+		  <a id="advice" type="button" class="nav-item" href="/tribune/news/advice">Advice</a><p class="divider"> |</p>
+		  <a id="reviews" type="button" class="nav-item" href="/tribune/news/reviews">Reviews</a><p class="divider"> |</p>
+		  <a id="interviews" type="button" class="nav-item" href="/tribune/news/interviews">Interviews</a><p class="divider"> |</p>
+		  <a id="investigations" type="button" class="nav-item" href="/tribune/news/investigations">Investigations</a><p class="divider"> |</p>
+		  <a id="investigations" type="button" class="nav-item" href="/tribune/news/showcase">Showcase</a><p class="divider"> |</p>
+		  <a id="contribute" type="button" class="nav-item" href="/tribune/news/contribute">Contribute</a><p class="divider"> |</p>
+		  <a id="magazine" type="button" class="nav-item" href="/tribunemagazine">Magazine</a><p class="divider"> |</p>
+		  <a id="contact" type="button" class="nav-item" href="/tribune/about">Contact</a>
 		</div>
 	</div>
 </div>

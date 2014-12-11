@@ -3,32 +3,66 @@
     font-family: reverse;
     src: url(reverse.otf);
 }
+@font-face {
+    font-family: BebasNeue;
+    src: url(BebasNeue.otf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(OpenSans.ttf);
+}
 body {
     overflow-x: hidden;
     background-color: #000000;
+    font-family: OpenSans;
 }
 
 
 /*  navbar */
 #headRow {
-    width:100%;
-    background-color: red;
-    text-align: center;
+  width:100%;
+  background-color: red;
+  text-align: center;
 }
 #logo {
-    font-family: reverse;
-    letter-spacing: 0.8em;
-    color: black;
-    margin-left: 0.4em;
-    font-size:1.8em;
-    display:inline;
+  font-family: reverse;
+  letter-spacing: 0.8em;
+  color: black;
+  margin-left: 0.4em;
+  font-size:2em;
+  display:inline;
+  text-shadow: 0.2em 0.2em 1em #000; ;
 }
 #logoLink {
-    text-decoration: none;
+  text-decoration: none;
+}
+#logo:hover {
+  letter-spacing: 1em;
 }
 #navBar a {
   margin-left: auto;
   margin-right: auto;
+  color: #000;
+  text-decoration: none;
+  font-family: BebasNeue;
+  font-size: 1.4em;
+}
+#navBar a:hover {
+  color: #FFFFFF;
+}
+.divider {
+  display: inline;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+#contribute:hover {
+  color: #00BF00 !important;
+}
+#magazine:hover {
+  color: #FFFF00 !important;
+}
+#contact:hover {
+  color: #0000FF !important;
 }
 
 /* For fade out in article previews */
@@ -79,6 +113,10 @@ h1, h2 {
 .readMore {
   margin-bottom: 0.2em;
   font-weight: bold;
+}
+/*  is used to remove a glitch that causes a line to appear next to the read more button during hover */
+.readMoreLink {
+  text-decoration: none !important;
 }
 #aboutCon {
   margin-top: 3em;
